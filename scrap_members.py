@@ -1,15 +1,14 @@
 from telethon.sync import TelegramClient
 from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
-from decouple import config
 import csv
 import os
 
 # please disable the two verification code if this enable in your telegram account before using this software
 
-api_id = config('api_id') # go to the my.telegram.org and API DEVEPLOMENT then copy the apt id and paste here
-api_hash = config('api_hash') # go to the my.telegram.org and API DEVEPLOMENT then copy the apt hash and paste here
-phone = config('phone') # enter the your account phone number + Countery code example:+251923481783
+api_id = "17972956" #config('api_id') # go to the my.telegram.org and API DEVEPLOMENT then copy the apt id and paste here
+api_hash = "bd3957fc220456845947aef0b56d8775" #config('api_hash') # go to the my.telegram.org and API DEVEPLOMENT then copy the apt hash and paste here
+phone = "+251985287648" #config('phone') # enter the your account phone number + Countery code example:+251923481783
 
 client = TelegramClient(phone, api_id, api_hash)
  
